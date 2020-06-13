@@ -2,7 +2,7 @@
 # Can be used in your theme by calling 'site.title' and so on
 title: Oráculo da Bolsa
 description: Previsões de preços das ações da bolsa de valores
-url: https://oraculodabolsa.com.br
+url: https://www.oraculodabolsa.com.br
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: .tmp/src
@@ -15,7 +15,7 @@ exclude: ['assets']
 author:
   name: Luiz Schiller
   email: schillerbr@gmail.com
-  uri: https://oraculodabolsa.com.br
+  uri: https://www.oraculodabolsa.com.br
   bio: O oráculo da bolsa
   twitter:
   github:
