@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+# Oráculo da Bolsa
 
-You can use the [editor on GitHub](https://github.com/schiller/oraculo-da-bolsa/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+> Previsões de preços das ações da bolsa de valores
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## To get started
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```sh
+$ gulp [--prod]
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage
 
-### Jekyll Themes
+```sh
+$ gulp build [--prod]
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/schiller/oraculo-da-bolsa/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```sh
+$ gulp deploy
+```
 
-### Support or Contact
+#### Settings
+In your `_config.yml` and `humans.txt` you should add your Github and Twitter
+profile if you want to.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Install
+If you have cloned this repo or want to reinstall, make sure there&#39;s no
+`node_modules` or `Gemfile.lock` folder/file and then run `npm install` and
+`bundle install`.
+
+#### Update
+To update: `npm update generator-jekyllized -g`, then run `yo jekyllized:gulp
+[--rsync|amazon|pages]` in this directory. Note that this will overwrite any
+local changes, so back it up.
+
+## Github
+For more information on how to use your new project, please refer to the [README
+on Github](https://github.com/sondr3/generator-jekyllized).
+
+## Owner
+
+> [Luiz Schiller](https://oraculodabolsa.com.br)
