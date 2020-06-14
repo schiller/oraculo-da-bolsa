@@ -1,52 +1,36 @@
-# Title, decription, tagline and URL for your site
-# Can be used in your theme by calling 'site.title' and so on
+# site settings
 title: Oráculo da Bolsa
-description: Previsões de preços das ações da bolsa de valores
+subtitle: Previsões de preços de ações
+email: schillerbr@gmail.com
+description: Previsões de preços das ações da bolsa de valores.
+baseurl:
 url: https://www.oraculodabolsa.com.br
+author: Luiz Schiller
+street_address:
+city:
+state:
+zip_code:
+country: Brasil
+phone:
 
-# Used so Jekyll outputs the site correctly so Gulp can do what it wants
-source: .tmp/src
-destination: .tmp/dist
-exclude: ['assets']
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
-# Same as the title etc for your site but can instead be
-# called by using 'site.author.name' and so on
-# NOTE: Don't use @ in front of your Twitter username
-author:
-  name: Luiz Schiller
-  email: schillerbr@gmail.com
-  uri: https://www.oraculodabolsa.com.br
-  bio: O oráculo da bolsa
-  twitter:
-  github:
+# social settings
+500px_url:
+facebook_url:
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url: https://instagram.com/oraculodabolsa
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
 
-# _config.build.yml overwrites these options when you run `gulp build`
-# Enables future posts (posts with dates in the future) and drafts
-future: true
-show_drafts: true
-# Disables the more accurate related posts for faster generating of the site
-lsi: false
-# Only make the last 10 posts so generating isn't slow
-limit_posts: 10
-
-# Permalink structure and pagination options
-permalink: none
-paginate: 10
-paginate_path: 'page:num'
-excerpt_separator: ''
-
-# Markdown library and options
+# build settings
 markdown: kramdown
-redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: rouge
 
-# Extending Jekyll
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-redirect-from
+sass:
+  style: compressed
